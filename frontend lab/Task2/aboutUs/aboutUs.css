@@ -1,0 +1,102 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: rgb(245, 241, 232);
+            color: #333333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        h1 {
+            margin: 0;
+        }
+        header {
+            background-color: #5b3a29;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+        #about {
+            width: 80%;
+            margin: 30px auto;
+        }
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+        }
+        .heading {
+            color: #5b3a29;
+            border-bottom: 2px solid #c49a6c;
+            padding-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: #eee3d0;
+            padding: 15px;
+            border-left: 5px solid #5b3a29;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            background-color: #f0e4d4;
+            padding: 20px;
+            flex: 1;
+            border-radius: 8px;
+        }
+        .card h3 {
+            color: #5b3a29;
+        }
+        ol {
+            background-color: rgb(235, 225, 210);
+            padding: 20px 40px;
+            border-radius: 8px;
+        }
+        ul {
+            background-color: #f0e4d4;
+            padding: 20px 40px;
+            border-radius: 8px;
+        }
+         li {
+            margin: 10px;
+        }
+        li:hover {
+            color: #8b4513;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a {
+            color: #5b3a29;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: rgb(180, 90, 60);
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            background-color: #5b3a29;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+        }
+        .button:hover {
+            background-color: rgb(120, 70, 40);
+        }
+        footer {
+            background-color: #5b3a29;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
