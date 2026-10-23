@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Voting Eligibility</title>
+    </head>
+    <body>
+        <h2>Voting Eligibility Checker</h2>
+
+        <script>
+            let age = prompt("Enter your age:");
+            age = Number(age);
+
+            if (age > 0 && Number.isFinite(age) && Number.isInteger(age)) {
+                let result = age >= 18
+                    ? "you are eligible to vote."
+                    : "you are not eligible to vote.";
+
+                alert(result);
+
+                document.write("<h3>Age: " + age + "</h3>");
+                document.write(result);
+            }
+            else {
+                alert("Please enter a valid age.");
+                document.write("<h3>Please enter a valid age.</h3>");
+            }
+        </script>
+    </body>
+</html>
