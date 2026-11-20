@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        .gallery {
+            background: white;
+            width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #mainImage {
+            width: 450px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .thumbnails img {
+            width: 100px;
+            height: 70px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .thumbnails img:hover {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery">
+
+        <h2>My Image Gallery</h2>
+
+        <!-- Main Image -->
+
+        <img id="mainImage"
+        src="https://picsum.photos/id/10/600/400">
+
+        <br><br>
+
+        <!-- Thumbnails -->
+
+        <div class="thumbnails">
+
+            <img src="https://picsum.photos/id/10/200/120">
+
+            <img src="https://picsum.photos/id/20/200/120">
+
+            <img src="https://picsum.photos/id/30/200/120">
+
+            <img src="https://picsum.photos/id/40/200/120">
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // Select main image
+        let mainImage = document.getElementById("mainImage");
+
+        // Select all thumbnail images
+        let thumbnails = document.querySelectorAll(".thumbnails img");
+
+        // Add click event to every thumbnail
+        thumbnails.forEach(function(img) {
+
+            img.addEventListener("click", function() {
+
+                mainImage.src = img.src;
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
